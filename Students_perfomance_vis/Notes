@@ -1,0 +1,18 @@
+Seaborn JointPlot Distribution
+Popular type of graph - good for looking at disctribution and data points at the same time 
+Has option to display different kind of graph - the parametr called kind.
+
+
+#scatterplot
+sns.set(rc={'figure.figsize':(12,6)})
+sns.scatterplot(x='reading score', y='writing score', data=df)
+plt.show()
+
+#regplot
+sns.set(rc={'figure.figsize':(12,6)})
+sns.regplot(x='reading score', y='writing score', data=df)
+plt.show()
+
+#Seaborn JointPlot Distribution
+sns.jointplot('reading score', 'writing score', data=df)
+plt.show()
